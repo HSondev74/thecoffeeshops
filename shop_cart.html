@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+
+    <!-- external assets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300;1,400;1,700&family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/CSS/base.css">
+    <link rel="stylesheet" href="./assets/CSS/shop.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <!-- nav tablet/mobile button -->
+        <button class="nav__bars-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- brand -->
+        <h2 class="brand"><a class="brand__link" href="./index.html">Congo</a></h2>
+
+        <!-- nav -->
+        <nav class="nav">
+            <!-- nav menu -->
+            <ul class="nav__list nav__list--page">
+                <li class="nav__item">
+                    <a class="nav__link" href="./index.html">Trang Chủ</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="./about.html">Giới Thiệu</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="./shop.html">Cửa Hàng</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="./main_blog.html">Blog</a>
+                </li>
+            </ul>
+
+            <!-- nav side button -->
+            <ul class="nav__list">
+                <li class="nav__item nav__item--cart">
+                    <a href="" class="nav__btn nav__btn--cart">
+                        <div class="nav__btn--cart-qty hidden"></div>
+                        <i class="nav__icon ti-shopping-cart"></i>
+                    </a>
+
+                    <div class="nav__cart ">
+                        <p class="nav__cart-no-product hidden">No products in the cart.</p>
+
+                        <div class="nav__cart-product">
+                            <ul class="nav__cart-list">
+                                <!-- <li class="nav__cart-item">
+                                    <div class="nav__cart-img">
+                                        <img src="./assets/img/product-1.jpg" alt="">
+                                    </div>
+
+                                    <div class="nav__cart-content">
+                                        <h4 class="nav__cart-name">Cà phê Espresso</h4>
+                                        <p class="nav__cart-qty">
+                                            Số lượng: <span class="nav__cart-num">1</span>
+                                        </p>
+                                        <p class="nav__cart-price">300.000 VNĐ</p>
+                                    </div>
+
+                                    <button class="nav__cart-close">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </li> -->
+                                <!-- 
+                                <li class="nav__cart-item">
+                                    <div class="nav__cart-img">
+                                        <img src="./assets/img/product-1.jpg" alt="" class="">
+                                    </div>
+
+                                    <div class="nav__cart-content">
+                                        <h4 class="nav__cart-name">Cà phê Espresso</h4>
+                                        <p class="nav__cart-qty">
+                                            Số lượng: <span class="nav__cart-num">1</span>
+                                        </p>
+                                        <p class="nav__cart-price">300.000 VNĐ</p>
+                                    </div>
+
+                                    <button class="nav__cart-close">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </li>
+
+                                <li class="nav__cart-item">
+                                    <div class="nav__cart-img">
+                                        <img src="./assets/img/product-1.jpg" alt="" class="">
+                                    </div>
+
+                                    <div class="nav__cart-content">
+                                        <h4 class="nav__cart-name">Cà phê Espresso</h4>
+                                        <p class="nav__cart-qty">
+                                            Số lượng: <span class="nav__cart-num">1</span>
+                                        </p>
+                                        <p class="nav__cart-price">300.000 VNĐ</p>
+                                    </div>
+
+                                    <button class="nav__cart-close">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </li> -->
+                            </ul>
+
+                            <p class="nav__cart-total">
+                                <!-- Total:
+                                <span class="nav__cart-total-price">600.000 VNĐ</span> -->
+                            </p>
+
+                            <div class="nav__cart-btns">
+                                <!-- <a href="" class="nav__cart-btn">Giỏ Hàng</a>
+                                <a href="" class="nav__cart-btn">Thanh Toán</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav__item">
+                    <a href="" class="nav__btn nav__btn--search">
+                        <i class="nav__icon ti-search"></i>
+                    </a>
+                </li>
+
+                <li class="nav__item nav__item--user">
+                    <a href="" class="nav__btn nav__btn--user">
+                        <i class="nav__icon ti-menu fa-regular fa-user"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- modal -->
+        <section class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__content">
+                <span class="modal__close">
+                    <i class="ti-close"></i>
+                </span>
+
+                <!-- modal login -->
+                <div class="modal__main modal--login modal__main--active">
+                    <h3 class="modal__header">Đăng nhập</h3>
+                    <form class="modal__form" action="">
+                        <label class="modal__label" for="">
+                            Email <span style="color: #f1152f; margin-left: 3px;">*</span>
+                        </label>
+                        <input class="modal__input" type="email" placeholder="Email của bạn" required>
+
+                        <label class="modal__label" for="">
+                            Mật khẩu <span style="color: #f1152f; margin-left: 3px;">*</span>
+                        </label>
+                        <input class="modal__input" type="password" placeholder="Nhập mật khẩu" required>
+
+                        <button class="modal__btn modal__btn--login">Đăng nhập</button>
+                        <button class="modal__btn-link modal__lost-pass">Quên mật khẩu?</button>
+                    </form>
+                    <button class="modal__btn-link modal__btn-link--register">Bạn mới biết đến Congo? Đăng
+                        ký</button>
+                </div>
+
+                <!-- modal register -->
+                <div class="modal__main modal--register">
+                    <h3 class="modal__header">Đăng ký</h3>
+                    <form class="modal__form" action="">
+                        <label class="modal__label" for="">
+                            Tên của bạn <span style="color: #f1152f; margin-left: 3px;">*</span>
+                        </label>
+                        <input class="modal__input" type="text" placeholder="Tên của bạn" required>
+
+                        <label class="modal__label" for="">
+                            Email <span style="color: #f1152f; margin-left: 3px;">*</span>
+                        </label>
+                        <input class="modal__input" type="email" placeholder="Email của bạn" required>
+
+                        <label class="modal__label" for="">
+                            Mật khẩu <span style="color: #f1152f; margin-left: 3px;">*</span>
+                        </label>
+                        <input class="modal__input" type="password" placeholder="Nhập mật khẩu" required>
+
+                        <label class="modal__label" for="">
+                            Nhập lại mật khẩu <span style="color: #f1152f; margin-left: 3px;">*</span>
+                        </label>
+                        <input class="modal__input" type="password" placeholder="Nhập lại mật khẩu" required>
+                        <button class="modal__btn modal__btn--register">Đăng ký</button>
+                    </form>
+                    <button class="modal__btn-link modal__btn-link--login">Bạn đã có tài khoản? Đăng nhập</button>
+                </div>
+
+                <!-- modal account -->
+                <div class="modal__main modal--account">
+                    <div class="modal__icon">
+                        <img src="./assets/img/login-icon.png" alt="">
+                    </div>
+                    <h3 class="modal__header">Chào mừng</h3>
+                    <p class="modal__account-name">Tống Giang,</p>
+                    <ul class="modal__list">
+                        <li class="modal__item">
+                            <a href="#" class="modal__link">
+                                <i class="modal__item-icon fa-solid fa-user"></i>
+                                Thông tin tài khoản
+                            </a>
+                        </li>
+
+                        <li class="modal__item">
+                            <a href="#" class="modal__link">
+                                <i class="modal__item-icon fa-solid fa-cart-shopping"></i>
+                                Giỏ hàng
+                            </a>
+                        </li>
+
+                        <li class="modal__item">
+                            <a href="#" class="modal__link">
+                                <i class="modal__item-icon fa-solid fa-gear"></i>
+                                Cài đặt
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="modal__btn modal__btn--logout">Đăng xuất</button>
+                </div>
+
+                <p class="modal__error"></p>
+            </div>
+
+        </section>
+    </header>
+
+    <!-- searh bar -->
+    <aside class="search-bar hidden">
+        <input type="text" class="search-bar__input" placeholder="Search here...">
+        <button class="search-bar__close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </aside>
+    <!-- main -->
+    <main>
+        <section class="hero">
+            <img src="./assets/img/shop-title-area.jpg" alt="">
+        </section>
+        <section class="container-products-infomation">
+            <div class="products-wrapper">
+                <div class="products-img">
+                    <img src="./assets/img/product-1.jpg" alt="" width="500" height="500">
+                </div>
+                <div class="products-summary">
+                    <h4 class="products-title">Cà phê Espresso</h4>
+                    <div class="rating-review_link">
+                        <span class="product-itemrating">
+                            <i class="products-item-star-gold fas fa-star"></i>
+                            <i class="products-item-star-gold fas fa-star"></i>
+                            <i class="products-item-star-gold fas fa-star"></i>
+                            <i class="products-item-star-gold fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <a class="reviews-link" href="">(
+                            <span id="count">2</span>
+                            Đánh giá )
+                        </a>
+                    </div>
+                    <span class="products-price">300.000 VND</span>
+                    <p class="products_information">
+                        Rang: rang nhẹ<br>
+                        Cường độ: 4/10<br>
+                        100% Arabica<br>
+                        Hương vị: cân bằng với hương hoa, cam quýt và sô cô la<br>
+                        Không biến đổi gen<br>
+                        Cà phê yêu thích của Ý<br>
+                        Hoàn hảo cho máy pha cà phê nhỏ giọt, dụng ép kiểu Pháp - french press, pour - over, hand
+                        drip<br>
+                    </p>
+                    <div class="products-form_cart">
+                        <span class="icon-minus">-</i></span>
+                        <input class="products-quantity" type="text" value="1" width="10">
+                        <span class="icon-plus">+</span>
+                        <button class="btn-add-cart">Thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="sparator-shopCart"></div>
+                    <div class="share">
+                        <span>Chia sẻ: </span>
+                        <ul class="share-icon">
+                            <li>
+                                <a href="#">
+                                    <i class="share-icon-item ti-facebook"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="">
+                                    <i class="share-icon-item ti-twitter-alt"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="share-icon-item ti-youtube"></i>
+                                </a>
+                            </li>
+
+                            <li class="">
+                                <a href="#">
+                                    <i class="share-icon-item ti-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sparator-shopCart"></div>
+            <div class="woocommerce-tabs">
+                <ul class="tabs">
+                    <li class="lists-tab description-tab">
+                        <b id="click-description">Mô tả</b>
+                    </li>
+                    <li class="lists-tab trademark-tab">
+                        <b id="click-trademark">Thương hiệu</b>
+                    </li>
+                    <li class="lists-tab reviews-tab">
+                        <b id="click-review">Nhận xét (
+                            <span id="count">2</span>
+                            )</b>
+                    </li>
+                </ul>
+                <div id="description" class="description-content-tab">
+                    <p>Gia đình Lavazza đã cống hiến hơn 120 năm để tìm ra những hỗn hợp hạt cà phê tốt nhất từ ​​khắp
+                        nơi trên thế giới để mang đến cho bạn trải nghiệm Ý đích thực. Lavazza Gran Aroma Ground Coffee
+                        Blend cũng không ngoại lệ. Quá trình rang chậm được sử dụng để tạo ra sự pha trộn này làm nổi
+                        bật hương thơm cà phê hoa, tạo ra một quá trình rang vừa cân bằng tốt. Bạn sẽ thưởng thức hương
+                        vị của cam quýt và sô cô la trong mỗi ngụm tinh tế. Sự pha trộn này được pha lý tưởng như một
+                        loại cà phê espresso truyền thống của Ý nhưng có đủ linh hoạt để hoạt động với máy pha cà phê
+                        nhỏ giọt, máy ép kiểu Pháp, moka pot không? bất kể phương pháp nấu bia yêu thích của bạn có thể
+                        là gì. Thưởng thức hương vị nước Ý độc đáo có một không hai tại Lavazza.</p>
+                </div>
+                <div id="trademark" class="trademark-content-tab">
+                    <h4>LAVAZZA COFFEE ITALY</h4>
+                    <p>cà phê lavazza, cà phê nhập khẩu từ ý, cà phê sạch, cà phê phục vụ cho nhà hàng khách sạn, cà phê
+                        hạt đã rang</p>
+                </div>
+                <div id="review" class="reviews-content-tab">
+                    <h2 class="reviews-title">2 Nhận xét</h2>
+                    <div class="reviews-lists">
+                        <div class="reviews-list-item">
+                            <div class="reviews-avata">
+                                <img src="https://secure.gravatar.com/avatar/a3c4d88c6648438f6ab44c0f13260353?s=83&d=mm&r=g"
+                                    alt="">
+                                <p>
+                                    <strong class="reviews-arthor">Nguyễn Khang</strong><br>
+                                    <time class="reviews-time">25.05.2022</time>
+                                </p>
+                            </div>
+                            <span class="product-itemrating">
+                                <i class="products-item-star-gold fas fa-star"></i>
+                                <i class="products-item-star-gold fas fa-star"></i>
+                                <i class="products-item-star-gold fas fa-star"></i>
+                                <i class="products-item-star-gold fas fa-star"></i>
+                                <i class=" fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div class="reviews-item-description">
+                            <p>Sản phẩm chất lượng!Hương vị say đắm!</p>
+                        </div>
+                        <div class="sparator-shopCart"></div>
+                        <div class="reviews-list-item">
+                            <div class="reviews-avata">
+                                <img src="https://secure.gravatar.com/avatar/a3c4d88c6648438f6ab44c0f13260353?s=83&d=mm&r=g"
+                                    alt="">
+                                <p>
+                                    <strong class="reviews-arthor">Trần Dần</strong><br>
+                                    <time class="reviews-time">20.05.2022</time>
+                                </p>
+                            </div>
+                            <span class="product-itemrating">
+                                <i class="products-item-star-gold fas fa-star"></i>
+                                <i class="products-item-star-gold fas fa-star"></i>
+                                <i class="products-item-star-gold fas fa-star"></i>
+                                <i class="products-item-star-gold fas fa-star"></i>
+                                <i class=" fas fa-star"></i>
+                            </span>
+
+                        </div>
+                        <div class="reviews-item-description">
+                            <p>Tuyệt vời!Tôi thích cà phê!Tôi sẽ tiếp tục mua sản phẩm này lần tới!</p>
+                        </div>
+                    </div>
+                    <div class="sparator-shopCart"></div>
+                    <div class="review-respond-tabs">
+                        <p>
+                            <span>Đánh giá của bạn?</span>
+                            <span class="review-respond-star product-itemrating">
+                                <i class="review-respond-star1 fas fa-star"></i>
+                                <i class="review-respond-star2 fas fa-star"></i>
+                                <i class="review-respond-star3 fas fa-star"></i>
+                                <i class="review-respond-star4 fas fa-star"></i>
+                                <i class="review-respond-star5 fas fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                            <textarea class="review-respond-text" name="" id="" cols="50" rows="10"
+                                placeholder="Nhập mô tả">
+                            </textarea>
+                        </p>
+                        <div class="">
+                            <input class="review-respond-name" type="text" placeholder="Nhập tên">
+                            <input class="review-respond-email" type="email" placeholder="Nhập Email">
+                        </div>
+                        <button class="review-respond-btn">Nhận xét</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="sparator-shopCart"></div>
+            <div class="products-related">
+                <h3>Sản phẩm cùng loại</h3>
+                <div class="grid_row">
+                    <div class="grid_column-10-3">
+                        <div class="products-item">
+                            <a class="products-item-link" href="shop_cart.html">
+                                <div class="products-img">
+                                    <img src="./assets/img/products-img.png" alt="">
+                                </div>
+                                <div class="products-addCart">
+                                    <i class="products-addCart-icon ti-bag"></i>
+                                    <span class="products-addCart-text">Mua Ngay</span>
+                                </div>
+                            </a>
+                            <div class="products-item-sub">
+                                <h4>
+                                    <a class="products-item-link products-title" href="">Cà phê bột LavAzza Gran
+                                        Aroma Ground Coffee Blend,rang nhẹ-340g</a>
+                                </h4>
+                                <div class="product-itemrating">
+                                    <i class="products-item-star-gold fas fa-star"></i>
+                                    <i class="products-item-star-gold fas fa-star"></i>
+                                    <i class="products-item-star-gold fas fa-star"></i>
+                                    <i class="products-item-star-gold fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="products-price">280.000 VND</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_column-10-3">
+                        <div class="products-item">
+                            <a class="products-item-link" href="">
+                                <div class="products-img">
+                                    <img src="./assets/img/pixlr-bg-result.png" alt="">
+                                </div>
+                                <div class="products-addCart">
+                                    <i class="products-addCart-icon ti-bag"></i>
+                                    <span class="products-addCart-text">Mua Ngay</span>
+                                </div>
+                            </a>
+                            <div class="products-item-sub">
+                                <h4>
+                                    <a class="products-item-link products-title" href="">Cà phê nhân xanh
+                                        Ethiopia Sidamo Guji Bensa-1kg</a>
+                                </h4>
+                                <div class="product-itemrating">
+                                    <i class="products-item-star-gold fas fa-star"></i>
+                                    <i class="products-item-star-gold fas fa-star"></i>
+                                    <i class="products-item-star-gold fas fa-star"></i>
+                                    <i class="products-item-star-gold fas fa-star"></i>
+                                    <i class="products-item-star-gold fas fa-star"></i>
+                                </div>
+                                <span class="products-price">390.000 VND</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_column-10-3">
+                        <div class="products-item">
+                            <a class="products-item-link" href="">
+                                <div class="products-img">
+                                    <img src="./assets/img/caphehatdarang.png" alt="">
+                                </div>
+                                <div class="products-addCart">
+                                    <i class="products-addCart-icon ti-bag"></i>
+                                    <span class="products-addCart-text">Mua Ngay</span>
+                                </div>
+                            </a>
+                            <div class="products-item-sub">
+                                <h4>
+                                    <a class="products-item-link products-title" href="">CÀ PHÊ BLAGU HẠT ĐÃ
+                                        RANG , ETHIOPIA W.YIRGACHEFFE, LIGHT MEDIUM ROAST 250G </a>
+                                </h4>
+                                <div class="product-itemrating">
+                                    <i class="products-item-star-gold fas fa-star"></i>
+                                    <i class="products-item-star-gold fas fa-star"></i>
+                                    <i class="products-item-star-gold fas fa-star"></i>
+                                    <i class="products-item-star-gold fas fa-star"></i>
+                                    <i class="products-item-star-gold fas fa-star"></i>
+                                </div>
+                                <span class="products-price">250.000 VND</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <div class="products-single-navigation">
+            <a href=""><i class="navigation-icon fas fa-arrow-left"></i> </a>
+            <a href="shop.html"><i class="navigation-icon fas fa-home"></i></a>
+            <a href=""><i class="navigation-icon fas fa-arrow-right"></i></a>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <section class="footer__top">
+            <div class="footer__container">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <i class="footer__item-icon ti-mobile"></i>
+                        PHONE : <span class="footer__item-content">+06070804111</span>
+                    </li>
+                    <li class="footer__item">
+                        <i class="footer__item-icon ti-location-pin"></i>
+                        ADDRESS : <span class="footer__item-content">108 Lương Sơn Bạc</span>
+                    </li>
+                    <li class="footer__item">
+                        <i class="footer__item-icon ti-email"></i>
+                        EMAIL : <span class="footer__item-content">congo@gmail.com</span>
+                    </li>
+                </ul>
+
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <img src="./assets/img/logoxoaphong (1).png" alt="" class="footer__logo-img">
+                    </div>
+                    <p class="footer__slogan">Chúng tôi luôn nỗ lực mang đến những trải nghiệm tuyệt vời nhất
+                        cho bạn!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer__bottom">
+            <div class="footer__container-bottom">
+                <div class="footer__copyright">
+                    2022 All Rights Reserved
+                </div>
+                <ul class="footer__socials">
+                    <li class="footer__social">
+                        <a href="#" class="footer__social-link">
+                            <i class="ti-facebook"></i>
+                        </a>
+                    </li>
+
+                    <li class="footer__social">
+                        <a href="#" class="footer__social-link">
+                            <i class="ti-twitter-alt"></i>
+                        </a>
+                    </li>
+
+                    <li class="footer__social">
+                        <a href="#" class="footer__social-link">
+                            <i class="ti-youtube"></i>
+                        </a>
+                    </li>
+
+                    <li class="footer__social">
+                        <a href="#" class="footer__social-link">
+                            <i class="ti-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+</body>
+
+<!-- script -->
+<script src="./assets/JS/base.js"></script>
+<script src="./assets/JS/shop_cart.js"></script>
+
+</html>
